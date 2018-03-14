@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import { Router } from 'express';
 import Tswa from '../model/tswa';
 import bodyParser from 'body-parser';
-import { authenticate } from '../middleware/authmiddleware';
+import { authenticate } from '../middleware/authMiddleware';
 
 export default({ config, db }) => {
   let api = Router();
